@@ -1,0 +1,43 @@
+{
+  "version": "v3",
+  "env": "MiniGrid-Empty-8x8-v0",
+  "device": "mps",
+  "exploration": "random",
+  "total_steps": 100000,
+  "latent_dim": 32,
+  "checkpoint_steps": [
+    1000,
+    5000,
+    10000,
+    25000,
+    50000,
+    100000
+  ],
+  "total_episodes": 419,
+  "checkpoints": [
+    {
+      "step": 1000,
+      "path": "checkpoints/v3_main/checkpoint_0001000.pt"
+    },
+    {
+      "step": 5000,
+      "path": "checkpoints/v3_main/checkpoint_0005000.pt"
+    },
+    {
+      "step": 10000,
+      "path": "checkpoints/v3_main/checkpoint_0010000.pt"
+    },
+    {
+      "step": 25000,
+      "path": "checkpoints/v3_main/checkpoint_0025000.pt"
+    },
+    {
+      "step": 50000,
+      "path": "checkpoints/v3_main/checkpoint_0050000.pt"
+    },
+    {
+      "step": 100000,
+      "path": "checkpoints/v3_main/checkpoint_0100000.pt"
+    }
+  ]
+}

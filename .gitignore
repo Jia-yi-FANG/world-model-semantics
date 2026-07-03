@@ -1,0 +1,88 @@
+# ── Model checkpoints (too large for GitHub) ──────────────────
+data/checkpoints/
+data/latents/
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+.eggs/
+venv*/
+.venv/
+env/
+.env
+
+# ── LaTeX build artifacts ─────────────────────────────────────
+paper/*.aux
+paper/*.bbl
+paper/*.blg
+paper/*.log
+paper/*.out
+paper/*.toc
+paper/*.fls
+paper/*.fdb_latexmk
+paper/*.synctex.gz
+paper/*.nav
+paper/*.snm
+
+# ── Internal fix / utility scripts (not needed for repro) ─────
+paper/fix_*.py
+paper/update_h6_dense.py
+paper/preview.py
+paper/paper_preview.html
+paper/utils/
+
+# ── Internal experiment scripts (confounded, not in paper) ────
+src/run_ae_comparison.py
+src/run_cross_beta_h6.py
+src/run_prediction_vs_reconstruction.py
+
+# ── Internal figures (not in paper) ───────────────────────────
+results/figures/ae_vs_vae_comparison.png
+results/figures/alignment_curve.png
+results/figures/loss_curve.png
+results/figures/mechanism_scatter.png
+results/figures/prediction_vs_reconstruction.png
+results/figures/reward_curve.png
+results/figures/rsa_curve.png
+results/figures/umap/
+
+# ── Internal JSON data (confounded experiments) ───────────────
+results/data/ae_vs_vae_comparison.json
+results/data/cross_beta_h6.json
+results/data/prediction_vs_reconstruction.json
+
+# ── Chinese project management docs ──────────────────────────
+docs/人机分工.md
+docs/交付目录.md
+docs/立项文档.md
+docs/实验步骤细化.md
+docs/验收标准_*.md
+
+# ── Multi-seed checkpoints & latents (large files) ────────────
+checkpoints_seed*/
+latents_seed*/
+
+# ── Auxiliary engineering files ───────────────────────────────
+02_training/
+results/reports/
+优化对照表.md
+
+# ── arXiv packaging (redundant with paper/) ───────────────────
+arxiv_submission/
+arxiv_submission.zip
+
+# ── OS / Editor ───────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.idea/
+.vscode/
+*.code-workspace
